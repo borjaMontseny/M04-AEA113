@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEA.1.1.3.</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <header>
+            <h1>Formulari IBC Developers Conference</h1>
+        </header>
+    </article>
+    <nav class="menu">
+        <ul>
+            <li><a href="#formulari">Formulari</a></li>
+            <li><a href="#horari">Horari</a></li>
+            <li><a href="#contacte">Contacte</a></li>
+        </ul>
+    </nav>
+    <form action="/action_page.php" method="get">
+        <h2 id="formulari">Formulari</h2>
+        <p>Introdueix les teves dades per participar al meeting</p>
+        <h3 class="Formulari">Dades de l'usuari</h3>
+        <label>Nom:</label><br>
+        <input type="text" id="nom" name="nom" value="" autofocus required>
+        <br>
+        <br>
+        <label>Cognoms:</label>
+        <br>
+        <input type="text" id="cognom" name="cognom" value="Exemple" required>
+        <br>
+        <br>
+        <label>DNI:</label>
+        <br>
+        <input type="text" id="DNI" name="DNI" value="00000000X" pattern="[0-9]{8,8}[T-Z]$" required>
+        <br>
+        <br>
+        <label>Data de naixement:</label>
+        <br>
+        <input type="date" id="dataNaixement" name="dataNaixement">
+        <br>
+        <br>
+        <label>Sexe:</label>
+        <br>
+        <input type="radio" id="sexeH" name="sexeH" value="home">
+        <label>Home</label><br>
+        <input type="radio" id="sexeD" name="sexeD" value="dona">
+        <label>Dona</label><br>
+        <input type="radio" id="noSexe" name="sexe" value="noSexe">
+        <label>Prefereixo no respondre</label>
+        <br>
+        <br>
+        <label>Correu electrònic: </label>
+        <br>
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+        <br><br>
+        <label>Adreça web:</label>
+        <br>
+        <input type="url" id="website" name="website" pattern="https?://.+" title="Inclueix http://">
+        <br>
+        <hr>
+        <h3>Dades d'inscripció</h3>
+        <h4 id="horari">Horari</h4>
+        <table>
+            <thead>
+                <tr>
+
+                    <th></th>
+                    <th>Dilluns</th>
+                    <th>Dimarts</th>
+                    <th>Dimecres</th>
+                    <th>Dijous</th>
+                    <th>Divendres</th>
+                    <th>Dissabte</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>09:00</th>
+                    <td colspan="2">Python</td>
+                    <td>C#</td>
+                    <td rowspan="3">PHP</td>
+                    <td rowspan="2">Java</td>
+                    <td rowspan="2">Python</td>
+                </tr>
+                <tr>
+                    <th>10:00</th>
+                    <td rowspan="2">Java</td>
+                    <td colspan="2" rowspan="3">Kotlin</td>
+                </tr>
+                <tr>
+                    <th>11:00</th>
+                    <td colspan="2" rowspan="2">Kotlin</td>
+                </tr>
+                <tr>
+                    <th>12:00</th>
+                    <td rowspan="2">C#</td>
+                    <td rowspan="2">Java</td>
+                </tr>
+                <tr>
+                    <th>13:00</th>
+                    <td colspan="2">C#</td>
+                    <td colspan="2">PHP</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h4>Llenguatges que t'interessen:</h4>
+        <select name="llenguatges" id="lang">
+            <option value="javascript">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="java">Java</option>
+            <option value="golang">Golang</option>
+            <option value="python">Python</option>
+            <option value="c#">C#</option>
+            <option value="C++">C++</option>
+            <option value="erlang">Erlang</option>
+        </select>
+        <br>
+        <h4>Llenguatges que domines:</h4>
+        <input type="checkbox" id="llenguatge1" name="llengautge1" value="Python">
+        <label> Python</label><br>
+        <input type="checkbox" id="llengautge2" name="llenguatge2" value="Java">
+        <label> Java</label><br>
+        <input type="checkbox" id="llengautge3" name="llenguatge3" value="C#">
+        <label> C#</label><br>
+        <input type="checkbox" id="llenguatge4" name="llenguatge4" value="Kotlin">
+        <label> Kotlin</label><br>
+        <input type="checkbox" id="llengautge5" name="llenguatge5" value="PHP">
+        <label> PHP</label><br>
+        <br>
+        <br>
+        <button type="submit">
+            <img src="https://www.josegalan.es/wp-content/uploads/2011/04/boton-enviar-facebook.png" alt="botonEnviar"
+                width="100" height="50">
+        </button>
+        <button type="reset">
+            <img src="https://pngimage.net/wp-content/uploads/2018/06/reset-button-png-.png" alt="botonReset"
+                width="100" height="50">
+        </button>
+    </form>
+    <footer id="contacte">
+        <p>Autor: <a href="https://github.com/borjaMontseny">Borja Montseny</a> (DAW 1r Matí)</p>
+        <p><a href="mailto:borja.montseny1@insbaixcamp.cat">borja.montseny1@insbaixcamp.cat</a></p>
+    </footer>
+</body>
+
+</html>
