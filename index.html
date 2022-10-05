@@ -18,7 +18,7 @@
 <body>
     <article>
         <header>
-            <h1>Formulari IBC Developers Conference</h1>
+            <h1>Formulari IBC Developers Conference 2022/23</h1>
         </header>
     </article>
     <nav class="menu">
@@ -61,10 +61,20 @@
         <label>Prefereixo no respondre</label>
         <br>
         <br>
+        <label>Adreça</label>
+        <br>
+        <input type="text" id="adreca" name="adreca" required>
+        <br>
+        <label>Telèfon:</label>
+        <br>
+        <input type="text" id="telefon" name="telèfon" pattern="(\+34|0034|34)?[ -]*(6|7)[ -]*([0-9][ -]*){8}" required>
+        <br>
+        <br>
         <label>Correu electrònic: </label>
         <br>
         <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-        <br><br>
+        <br>
+        <br>
         <label>Adreça web:</label>
         <br>
         <input type="url" id="website" name="website" pattern="https?://.+" title="Inclueix http://">
